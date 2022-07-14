@@ -18,5 +18,5 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### You can also check this app Netlify:
+### You can also check this app on Netlify:
 https://sj-montecinema.netlify.app
