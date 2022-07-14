@@ -1,0 +1,191 @@
+:root {
+--primary-color: #EC1115;
+--primary-dark: #A60C0E;
+--secondary-color: #f47073;
+--light-gray: #85868d;
+--dark-gray: #343541;
+}
+
+@keyframes heart {
+75% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
+}
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+background: #fff;
+height: 100vh;
+}
+
+a {
+text-decoration: none;
+color: var(--primary-color);
+}
+
+
+#page-header .header-container
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 25px 48px;
+gap: 311px;
+}
+
+#contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 150px;
+width: 603px;
+gap: 40px;
+}
+
+#contact-form h1 {
+font-family: 'Eczar', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 80px;
+line-height: 102%;
+letter-spacing: -0.01em;
+color: #343541;
+}
+
+#contact-form span {
+color: rgb(133, 134, 141);
+}
+
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.header-right {
+font-family: 'Roboto Mono', monospace;
+text-transform: uppercase;
+}
+
+.heart-icon img{
+width: 18px;
+animation: heart 2s infinite;
+transition: all 0.2s ease-in-out;
+}
+
+.form-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 64px;
+gap: 40px;
+width: 600px;
+height: 500px;
+
+/* Other / Snow White */
+
+background: #FFFFFF;
+box-shadow: 0px 4px 22px rgba(52, 53, 65, 0.15);
+border-radius: 24px;
+}
+
+.form-group{
+display: flex;
+flex-direction: column;
+margin-bottom: 24px;
+}
+
+.form-group label {
+width: 43px;
+height: 18px;
+font-family: 'Roboto Mono', monospace;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--secondary-color);
+margin-bottom: 12px;
+}
+
+.form-group input {
+background-color: #f7f7f7;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 18px;
+color: var(--light-gray);
+border: none;
+border-radius: 8px;
+height: 56px;
+padding: 24px;
+width: 100%;
+}
+
+.input-container {
+position:relative;
+}
+
+.input-container button{
+cursor: pointer;
+position: absolute;
+border: none;
+background: none;
+max-width: 32px;
+right: 3%;
+top: 20%;
+}
+
+.form-validation{
+letter-spacing: 0.04em;
+color: var(--dark-gray);
+line-height: 170%;
+padding-bottom: 40px;
+}
+
+.btn{
+cursor: pointer;
+width: 228px;
+padding: 20px;
+/* height: 56px; */
+font-family: 'Roboto Mono', monospace;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+border: none;
+border-radius: 64px;
+}
+
+.btn-primary{
+background: var(--primary-color);
+color: white;
+}
+
+.btn-primary:hover{
+background: var(--primary-dark);
+}
+
+.btn-secondary{
+background: #FFFFFF;
+color: var(--primary-color);
+}
+
+.valid{
+color: #27AE60;;
+}
+.invalid{
+color: var(--primary-color);
+}

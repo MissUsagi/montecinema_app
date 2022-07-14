@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto&family=Roboto+Mono:wght@500;700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="/styles/style.css">
-   <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles/mobile.css">
    <title>Monte Cinema Wrocław</title>
 </head>
 
@@ -20,21 +19,26 @@
       <div class="header-container">
          <div class="logo">
             <a href="index.html">
-               <img src="/img/logo.svg" alt="Monte Cinema">
+               <img src="/img/logo.png" alt="Monte Cinema">
             </a>
          </div>
          <div class="header-right">
-            <h3>Developed with<span class="heart-icon"><img src="./img/heart.png" alt="♥"></span>by Monterail</h3>
+            <h3>Developed with <span class="heart-icon"><img src="./img/heart.png" alt="♥"></span> by Monterail</h3>
          </div>
       </div>
    </header>
 
-   <div class="page-container">
-      <div id="app"></div>
-
+   <div id="success-panel" class="page-container">
+      <h1 class="mb-1">Good job {{ userName }}!</h1>
+      <div class="text">
+         <p>We have sent you an email to <strong> {{ email }} </strong></p>
+         <p>Make sure to click the link from the message to activate your account.</p>
+      </div>
+      <a class="btn btn-primary m1" href="/index.html">Go to homepage</a>
    </div>
 
-
+   <script src="https://unpkg.com/vue@next"></script>
+   <script src="app.js"></script>
 </body>
 
 </html>
